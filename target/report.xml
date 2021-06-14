@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="36.379">
+    <testcase classname="Login Functionality" name="Verify the login functionality with valid credentials" time="35.547">
+        <failure message="Index 5 out of bounds for length 5" type="java.lang.ArrayIndexOutOfBoundsException"><![CDATA[Given User is on login page.................................................passed
+When User provide a valid credentials Ammarah@transformhub.com Test@1234....passed
+Then User should be landed on OTP verification page.........................passed
+When User provide the OTP...................................................failed
+Then Verify the user successfully logged in and landed on dashboard.........skipped
+
+StackTrace:
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at stepDefinitions.Login_stepDefinition.user_provide_the_otp(Login_stepDefinition.java:49)
+	at ✽.User provide the OTP(file:///E:/eclipse-workspace/Briix-Admin/src/test/java/features/Login.feature:8)
+]]></failure>
+    </testcase>
+</testsuite>

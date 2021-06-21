@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="42.634">
-    <testcase classname="Login Functionality" name="Verify the login functionality with valid credentials" time="41.954">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="176.066">
+    <testcase classname="Login Functionality" name="Email and Password Validation in Login API" time="21.83">
         <system-out><![CDATA[Given User is on login page.................................................passed
-When User provide a valid credentials Ammarah@transformhub.com Test@1234....passed
-Then User should be landed on OTP verification page.........................passed
-When User provide the OTP...................................................passed
-Then Verify the user successfully logged in and landed on dashboard.........passed
+When User provide a valid credentials "" "".................................passed
+Then Verify the message "Field can't be empty!".............................passed
 ]]></system-out>
+    </testcase>
+    <testcase classname="Login Functionality" name="Email and Password Validation in Login API 2" time="20.93">
+        <system-out><![CDATA[Given User is on login page.................................................passed
+When User provide a valid credentials "abc" "123333"........................passed
+Then Verify the message "Email id is not valid!"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Functionality" name="Email and Password Validation in Login API 3" time="49.076">
+        <system-out><![CDATA[Given User is on login page.................................................passed
+When User provide a valid credentials "abc@mail7.io" "".....................passed
+Then Verify the message "Field can't be empty!".............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Functionality" name="Email and Password Validation in Login API 4" time="83.304">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='password-helper-text']&quot;}&#10;  (Session info: chrome=90.0.4430.85)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'&#10;System info: host: 'DESKTOP-Q6390IC', ip: '192.168.0.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [87ec035a6989309bb6342e5d44dfbd37, findElement {using=xpath, value=//*[@id='password-helper-text']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50653/devtoo..., se:cdpVersion: 90.0.4430.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 87ec035a6989309bb6342e5d44dfbd37" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is on login page.................................................passed
+When User provide a valid credentials "amarah@transformhub.com" "password"..passed
+Then Verify the message "Email and Password combination Incorrect"..........failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password-helper-text']"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'
+System info: host: 'DESKTOP-Q6390IC', ip: '192.168.0.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [87ec035a6989309bb6342e5d44dfbd37, findElement {using=xpath, value=//*[@id='password-helper-text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50653/devtoo..., se:cdpVersion: 90.0.4430.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 87ec035a6989309bb6342e5d44dfbd37
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at pageObject.Login_PageObject.getpasswordErrorMessage(Login_PageObject.java:74)
+	at stepDefinitions.Login_stepDefinition.verify_the_message_something(Login_stepDefinition.java:112)
+	at ✽.Verify the message "Email and Password combination Incorrect"(file:///E:/eclipse-workspace/Briix-Admin/src/test/java/features/Login.feature:15)
+]]></failure>
     </testcase>
 </testsuite>

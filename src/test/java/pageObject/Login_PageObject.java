@@ -63,6 +63,16 @@ By verifyButton=By.xpath("//button[.='Verify']");
 By invalidOTP=By.xpath("//p[.='Invalid OTP']");
 	public WebElement getinvalidOTP() {
 	return driver.findElement(invalidOTP);	
+	}
+	
+By errorMessage=By.xpath("//*[@id='email-helper-text']");
+	public WebElement geterrorMessage() {
+	return driver.findElement(errorMessage);	
+	}
+By passwordErrorMessage=By.xpath("//*[@id='password-helper-text']");
+	public WebElement getpasswordErrorMessage() {
+	return driver.findElement(passwordErrorMessage);	
 	}	
+	
 	
 }

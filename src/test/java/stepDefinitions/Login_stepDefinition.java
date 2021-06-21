@@ -25,7 +25,7 @@ public class Login_stepDefinition extends OpenBrowser {
 		Login=new Login_PageObject(driver);
 		}
 
-    @When("^User provide a valid credentials (.+) (.+)$")
+    @When("User provide a valid credentials {string} {string}")
     public void user_provide_a_valid_credentials(String userName, String password) throws Throwable {
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30, 0));
     	Login.getuserName().sendKeys(userName);
@@ -95,6 +95,23 @@ public class Login_stepDefinition extends OpenBrowser {
     		System.out.println(invalidOTP+" is entered");
     	
     	}
+    	
+    }
+    @Then("Verify the message {string}")
+    public void verify_the_message_something(String message) throws Throwable {
+    	try {
+      String Error=Login.geterrorMessage().getText();
+      if(Error.equalsIgnoreCase(message)) {
+    	  System.out.println(Error);
+      }
+      else {
+    	  String anotherError=Login.getpasswordErrorMessage().getText();
+    	  System.out.println(anotherError);
+      }
+    	}catch (Exception e) {
+    	String anotherError=Login.getpasswordErrorMessage().getText();
+      	  System.out.println(anotherError);
+		}
     }
 
 }

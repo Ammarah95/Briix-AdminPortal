@@ -109,9 +109,22 @@ public class Login_stepDefinition extends OpenBrowser {
     	  System.out.println(anotherError);
       }
     	}catch (Exception e) {
-    	String anotherError=Login.getpasswordErrorMessage().getText();
-      	  System.out.println(anotherError);
+    	if(isAlertPresent()) {
+    		System.out.println("Error Message is verified");
+    	}
 		}
     }
+    
+    public boolean isAlertPresent(){
+		 try{
+			 String anotherError=Login.getpasswordErrorMessage().getText();
+	      	  System.out.println(anotherError);
+		  return true;
+		 }catch(Exception ex){
+		String Error=Login.getincorrectPassword().getText();
+		System.out.println(Error);
+		  return false;
+		 }
+		}
 
 }

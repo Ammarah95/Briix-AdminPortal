@@ -16,15 +16,24 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    
   </properties>
+  <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+  
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-engine</artifactId>
+    <version>5.7.2</version>
+    <scope>test</scope>
+</dependency>
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -66,6 +75,16 @@
     <groupId>tech.grasshopper</groupId>
     <artifactId>extent-pdf-report</artifactId>
     <version>1.5.0</version>
+</dependency>
+<dependency>
+        <groupId>com.github.ralfstuckert.pdfbox-layout</groupId>
+        <artifactId>pdfbox2-layout</artifactId>
+        <version>1.0.1</version>
+    </dependency>
+<dependency>
+	<groupId>org.apache.pdfbox</groupId>
+	<artifactId>pdfbox</artifactId>
+	<version>2.0.22</version>
 </dependency>
   </dependencies>
 

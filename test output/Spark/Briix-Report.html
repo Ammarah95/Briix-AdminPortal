@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Briix Automation Tested Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 23, 2021 12:23:23 PM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 5, 2021 05:37:09 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 23, 2021 12:23:23 PM</h3>
+<h3>Aug 5, 2021 05:37:09 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 23, 2021 12:28:05 PM</h3>
+<h3>Aug 5, 2021 05:37:28 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>6</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>22</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login Functionality":278.861
+"Login Functionality":16.797
 };
 </script>
 <div class="row">
@@ -172,16 +172,8 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@validLogin</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@invalidLogin</td>
-<td>5</td>
+<td>@forgotPassword</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -219,13 +211,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 6,
+passChild: 1,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 22,
+passGrandChild: 4,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -250,7 +242,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@validLogin</a><a class="dropdown-item" href="#">@invalidLogin</a>
+<a class="dropdown-item" href="#">@forgotPassword</a>
 </ul>
 </li>
 </ul>
@@ -263,7 +255,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login Functionality</p>
             <p class="text-sm">
-              <span>12:23:26 PM</span> / <span>00:04:38:861</span>
+              <span>17:37:11 PM</span> / <span>00:00:16:797</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -272,9 +264,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login Functionality</h5>
-<span class='badge badge-success'>06.23.2021 12:23:26</span>
-<span class='badge badge-danger'>06.23.2021 12:28:05</span>
-<span class='badge badge-default'>00:04:38:861</span>
+<span class='badge badge-success'>08.05.2021 17:37:11</span>
+<span class='badge badge-danger'>08.05.2021 17:37:28</span>
+<span class='badge badge-default'>00:00:16:797</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -284,7 +276,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify the login functionality with valid credentials</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify the login functionality with Forget password link</div>
       </div>
     </div>
         <div class="collapse">
@@ -294,168 +286,22 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.user_provide_a_valid_credentials(java.lang.String,java.lang.String)">
-                <span>When User provide a valid credentials "Ammarah@transformhub.com" "Test@1234"</span>
+              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.user_click_on_forgot_password_link()">
+                <span>When User click on forgot password link</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.user_should_be_landed_on_otp_verification_page()">
-                <span>Then User should be landed on OTP verification page</span>
+              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.user_should_enter_email(java.lang.String)">
+                <span>And User should enter email "ammarah@transformhub.com"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.user_provide_the_otp()">
-                <span>When User provide the OTP</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.verify_the_user_successfully_logged_in_and_landed_on_dashboard()">
-                <span>Then Verify the user successfully logged in and landed on dashboard</span>
+              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.verify_the_message()">
+                <span>Then Verify the message</span>
       <div>
       </div>
               </div>
           </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Verify the login functionality with invalid OTP</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.user_is_on_login_page()">
-                <span>Given User is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.user_provide_a_valid_credentials(java.lang.String,java.lang.String)">
-                <span>When User provide a valid credentials "Ammarah@transformhub.com" "Test@1234"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.user_should_be_landed_on_otp_verification_page()">
-                <span>Then User should be landed on OTP verification page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.user_provide_the_otp()">
-                <span>When User provide the OTP</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.Login_stepDefinition.verify_the_user_successfully_logged_in_and_landed_on_dashboard()">
-                <span>Then Verify the user successfully logged in and landed on dashboard</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Email and Password Validation for Login</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Email and Password Validation for Login</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given User is on login page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User provide a valid credentials "" ""</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Verify the message "Field can't be empty!"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Email and Password Validation for Login</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given User is on login page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User provide a valid credentials "abc" "123333"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Verify the message "Email id is not valid!"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>Email and Password Validation for Login</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given User is on login page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User provide a valid credentials "abc@mail7.io" ""</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Verify the message "Field can't be empty!"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="42"><span class="badge log pass-bg mr-2">Pass</span>Email and Password Validation for Login</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given User is on login page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User provide a valid credentials "amarah@transformhub.com" "password"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Verify the message "Password is not in valid format. Please use combination of capital, small letters,numbers and special characters with min length 8."</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
         </div>
   </div>
 </div>
@@ -474,22 +320,22 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@validLogin</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">@forgotPassword</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@validLogin</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<h4>@forgotPassword</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -502,97 +348,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:23:26 PM</td>
+<td>17:37:11 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verify the login functionality with valid credentials</a>
+<a href="#" class="linked" test-id='1' id='2'>Verify the login functionality with Forget password link</a>
 <div class="">
-<span class="badge badge-default">Login Functionality.Verify the login functionality with valid credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:24:21 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='11'>Verify the login functionality with invalid OTP</a>
-<div class="">
-<span class="badge badge-default">Login Functionality.Verify the login functionality with invalid OTP</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>5</span>
-</span>
-<p class="name">@invalidLogin</p>
-<p class="duration text-sm">5 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@invalidLogin</h4>
-<span status="pass" class='badge log pass-bg'>5 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:25:03 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='20'>Email and Password Validation for Login</a>
-<div class="">
-<span class="badge badge-default">Login Functionality.Email and Password Validation for Login</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:25:03 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='21'>Email and Password Validation for Login</a>
-<div class="">
-<span class="badge badge-default">Login Functionality.Email and Password Validation for Login</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:25:26 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='28'>Email and Password Validation for Login</a>
-<div class="">
-<span class="badge badge-default">Login Functionality.Email and Password Validation for Login</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:25:50 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='35'>Email and Password Validation for Login</a>
-<div class="">
-<span class="badge badge-default">Login Functionality.Email and Password Validation for Login</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:26:43 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='42'>Email and Password Validation for Login</a>
-<div class="">
-<span class="badge badge-default">Login Functionality.Email and Password Validation for Login</span>
+<span class="badge badge-default">Login Functionality.Verify the login functionality with Forget password link</span>
 </div>
 </td>
 </tr>

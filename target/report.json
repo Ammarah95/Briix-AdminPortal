@@ -3,128 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-23T06:53:26.802Z",
+        "start_timestamp": "2021-06-28T07:54:10.276Z",
         "before": [
           {
             "result": {
-              "duration": 7001200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.beforevalidation()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Verify the login functionality with valid credentials",
-        "description": "",
-        "id": "login-functionality;verify-the-login-functionality-with-valid-credentials",
-        "after": [
-          {
-            "result": {
-              "duration": 7000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 1170274300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.aftervalidation()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 27373377000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on login page",
-            "match": {
-              "location": "stepDefinitions.Login_stepDefinition.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1741440100,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User provide a valid credentials \"Ammarah@transformhub.com\" \"Test@1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ammarah@transformhub.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"Test@1234\"",
-                  "offset": 60
-                }
-              ],
-              "location": "stepDefinitions.Login_stepDefinition.user_provide_a_valid_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 28003000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User should be landed on OTP verification page",
-            "match": {
-              "location": "stepDefinitions.Login_stepDefinition.user_should_be_landed_on_otp_verification_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 22231975900,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User provide the OTP",
-            "match": {
-              "location": "stepDefinitions.Login_stepDefinition.user_provide_the_otp()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2129141100,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Verify the user successfully logged in and landed on dashboard",
-            "match": {
-              "location": "stepDefinitions.Login_stepDefinition.verify_the_user_successfully_logged_in_and_landed_on_dashboard()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@validLogin"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-23T06:54:21.866Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2001800,
+              "duration": 6001600,
               "status": "passed"
             },
             "match": {
@@ -139,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 1002600,
+              "duration": 6000500,
               "status": "passed"
             },
             "match": {
@@ -148,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 1080037200,
+              "duration": 1554398500,
               "status": "passed"
             },
             "match": {
@@ -161,7 +44,7 @@
         "steps": [
           {
             "result": {
-              "duration": 21969134800,
+              "duration": 27528638200,
               "status": "passed"
             },
             "line": 13,
@@ -173,7 +56,7 @@
           },
           {
             "result": {
-              "duration": 1648413200,
+              "duration": 2696687300,
               "status": "passed"
             },
             "line": 14,
@@ -195,7 +78,7 @@
           },
           {
             "result": {
-              "duration": 56012300,
+              "duration": 375097300,
               "status": "passed"
             },
             "line": 15,
@@ -207,7 +90,7 @@
           },
           {
             "result": {
-              "duration": 14882157100,
+              "duration": 8506168500,
               "status": "passed"
             },
             "line": 16,
@@ -219,7 +102,7 @@
           },
           {
             "result": {
-              "duration": 2184869200,
+              "duration": 2396050400,
               "status": "passed"
             },
             "line": 17,
@@ -232,401 +115,7 @@
         ],
         "tags": [
           {
-            "name": "@validLogin"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-23T06:55:03.757Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2001500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.beforevalidation()"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "Email and Password Validation for Login",
-        "description": "",
-        "id": "login-functionality;email-and-password-validation-for-login;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 3001900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 1287323600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.aftervalidation()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 19970905400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User is on login page",
-            "match": {
-              "location": "stepDefinitions.Login_stepDefinition.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 812208500,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User provide a valid credentials \"\" \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"\"",
-                  "offset": 36
-                }
-              ],
-              "location": "stepDefinitions.Login_stepDefinition.user_provide_a_valid_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 101025900,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Verify the message \"Field can\u0027t be empty!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Field can\u0027t be empty!\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepDefinitions.Login_stepDefinition.verify_the_message_something(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@invalidLogin"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-23T06:55:25.998Z",
-        "before": [
-          {
-            "result": {
-              "duration": 999900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.beforevalidation()"
-            }
-          }
-        ],
-        "line": 28,
-        "name": "Email and Password Validation for Login",
-        "description": "",
-        "id": "login-functionality;email-and-password-validation-for-login;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 7001500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 1405330500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.aftervalidation()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 21688230900,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User is on login page",
-            "match": {
-              "location": "stepDefinitions.Login_stepDefinition.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 899222700,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User provide a valid credentials \"abc\" \"123333\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"abc\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"123333\"",
-                  "offset": 39
-                }
-              ],
-              "location": "stepDefinitions.Login_stepDefinition.user_provide_a_valid_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 87023200,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Verify the message \"Email id is not valid!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Email id is not valid!\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepDefinitions.Login_stepDefinition.verify_the_message_something(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@invalidLogin"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-23T06:55:50.156Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.beforevalidation()"
-            }
-          }
-        ],
-        "line": 29,
-        "name": "Email and Password Validation for Login",
-        "description": "",
-        "id": "login-functionality;email-and-password-validation-for-login;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 999700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 1304719600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.aftervalidation()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 20471052800,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User is on login page",
-            "match": {
-              "location": "stepDefinitions.Login_stepDefinition.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1035263500,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User provide a valid credentials \"abc@mail7.io\" \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"abc@mail7.io\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"\"",
-                  "offset": 48
-                }
-              ],
-              "location": "stepDefinitions.Login_stepDefinition.user_provide_a_valid_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 30085577500,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Verify the message \"Field can\u0027t be empty!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Field can\u0027t be empty!\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepDefinitions.Login_stepDefinition.verify_the_message_something(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@invalidLogin"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-06-23T06:56:43.098Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2000700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.beforevalidation()"
-            }
-          }
-        ],
-        "line": 30,
-        "name": "Email and Password Validation for Login",
-        "description": "",
-        "id": "login-functionality;email-and-password-validation-for-login;;5",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 1130507300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.aftervalidation()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 20018024800,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User is on login page",
-            "match": {
-              "location": "stepDefinitions.Login_stepDefinition.user_is_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1420358800,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User provide a valid credentials \"amarah@transformhub.com\" \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"amarah@transformhub.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 59
-                }
-              ],
-              "location": "stepDefinitions.Login_stepDefinition.user_provide_a_valid_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 60160537200,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Verify the message \"Password is not in valid format. Please use combination of capital, small letters,numbers and special characters with min length 8.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Password is not in valid format. Please use combination of capital, small letters,numbers and special characters with min length 8.\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepDefinitions.Login_stepDefinition.verify_the_message_something(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@invalidLogin"
+            "name": "@validLogin1"
           }
         ]
       }

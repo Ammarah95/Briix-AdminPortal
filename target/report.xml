@@ -1,43 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="280.105">
-    <testcase classname="Login Functionality" name="Verify the login functionality with valid credentials" time="55.031">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="44.427">
+    <testcase classname="Login Functionality" name="Verify the login functionality with invalid OTP" time="43.477">
         <system-out><![CDATA[Given User is on login page.................................................passed
 When User provide a valid credentials "Ammarah@transformhub.com" "Test@1234".passed
 Then User should be landed on OTP verification page.........................passed
 When User provide the OTP...................................................passed
 Then Verify the user successfully logged in and landed on dashboard.........passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Login Functionality" name="Verify the login functionality with invalid OTP" time="41.87">
-        <system-out><![CDATA[Given User is on login page.................................................passed
-When User provide a valid credentials "Ammarah@transformhub.com" "Test@1234".passed
-Then User should be landed on OTP verification page.........................passed
-When User provide the OTP...................................................passed
-Then Verify the user successfully logged in and landed on dashboard.........passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Login Functionality" name="Email and Password Validation for Login" time="22.196">
-        <system-out><![CDATA[Given User is on login page.................................................passed
-When User provide a valid credentials "" "".................................passed
-Then Verify the message "Field can't be empty!".............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Login Functionality" name="Email and Password Validation for Login 2" time="24.119">
-        <system-out><![CDATA[Given User is on login page.................................................passed
-When User provide a valid credentials "abc" "123333"........................passed
-Then Verify the message "Email id is not valid!"............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Login Functionality" name="Email and Password Validation for Login 3" time="52.913">
-        <system-out><![CDATA[Given User is on login page.................................................passed
-When User provide a valid credentials "abc@mail7.io" "".....................passed
-Then Verify the message "Field can't be empty!".............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Login Functionality" name="Email and Password Validation for Login 4" time="82.749">
-        <system-out><![CDATA[Given User is on login page.................................................passed
-When User provide a valid credentials "amarah@transformhub.com" "password"..passed
-Then Verify the message "Password is not in valid format. Please use combination of capital, small letters,numbers and special characters with min length 8.".passed
 ]]></system-out>
     </testcase>
 </testsuite>

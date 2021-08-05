@@ -28,3 +28,12 @@ Feature: Login Functionality
       | abc                     |   123333 | Email id is not valid!                                                                                                              |
       | abc@mail7.io            |          | Field can't be empty!                                                                                                               |
       | amarah@transformhub.com | password | Password is not in valid format. Please use combination of capital, small letters,numbers and special characters with min length 8. |
+
+      
+      @forgotPassword
+  Scenario: Verify the login functionality with Forget password link
+    Given User is on login page
+    When User click on forgot password link
+    And User should enter email "ammarah@transformhub.com"
+    Then Verify the message
+    

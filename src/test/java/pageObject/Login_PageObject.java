@@ -20,6 +20,11 @@ By password=By.id("password");
 	return driver.findElement(password);	
 	}
 	
+By sendLink=By.xpath("//button[.='Send Link']");
+	public WebElement getsendLink() {
+	return driver.findElement(sendLink);	
+	}	
+	
 By loginButton=By.xpath("//button[.='Login']");
 	public WebElement getloginButton() {
 	return driver.findElement(loginButton);	
@@ -79,5 +84,18 @@ By incorrectPassword=By.xpath("//*[@class='MuiTypography-root MuiTypography-body
 	return driver.findElement(incorrectPassword);	
 	}
 	
+By forgotPassword=By.xpath("//a[.='Forgot Password?']");
+	public WebElement getforgotPassword() {
+	return driver.findElement(forgotPassword);	
+	}
 	
+By forgotTitle=By.xpath("//h5[.='Forgot Password,']");
+	public WebElement getforgotTitle() {
+	return driver.findElement(forgotTitle);	
+	}
+	
+By confirmationMessage=By.xpath("//p[.='We have sent a password reset instructions to your email If you haven’t recevied an email then click on “Resend Link”']");
+	public WebElement getconfirmationMessage() {
+	return driver.findElement(confirmationMessage);	
+	}
 }

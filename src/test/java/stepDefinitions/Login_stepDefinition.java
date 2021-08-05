@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebElement;
 
 import WebPortal.Briix_Admin.OpenBrowser;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -32,6 +33,24 @@ public class Login_stepDefinition extends OpenBrowser {
     	Login.getpassword().sendKeys(password);
     	URL=driver.getCurrentUrl();
     	Login.getloginButton().click();       
+    }
+    @When("User click on forgot password link")
+    public void user_click_on_forgot_password_link() throws Throwable {
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30, 0));
+    	Login.getforgotPassword().click();
+    	
+    	String Title="Forgot Password,";
+    	if (Title.equalsIgnoreCase(Login.getforgotTitle().getText())) {
+    		System.out.println("User landed on forgot password page");
+    	}else {
+    		System.out.println("Something went wrong");
+    	}
+    }
+    @And("User should enter email {string}")
+    public void user_should_enter_email(String email) throws Throwable {
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30, 0));
+    	Login.getuserName().sendKeys(email); 
+    	Login.getsendLink().click();
     }
 
     @When("User provide the OTP")
@@ -76,6 +95,16 @@ public class Login_stepDefinition extends OpenBrowser {
     	String verification=URL+"-otp";
     	if (driver.getCurrentUrl().equalsIgnoreCase(verification)) {
     		System.out.println("User landed on OTP verification page");
+    	}else {
+    		System.out.println("Something went wrong");
+    	}
+        
+    }
+    @Then("Verify the message")
+    public void verify_the_message() throws Throwable {
+    	String message="We have sent a password reset instructions to your email If you haven’t recevied an email then click on “Resend Link”";
+    	if (message.equalsIgnoreCase(Login.getconfirmationMessage().getText())) {
+    		System.out.println("Message is Verified");
     	}else {
     		System.out.println("Something went wrong");
     	}

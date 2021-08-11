@@ -1,5 +1,5 @@
 package stepDefinitions;
-//import org.automationtesting.excelreport.Xl;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -7,9 +7,6 @@ import WebPortal.Briix_Admin.OpenBrowser;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-
-//import org.automationtesting.excelreport.Xl;
-
 public class Hooks extends OpenBrowser {
 	
 	

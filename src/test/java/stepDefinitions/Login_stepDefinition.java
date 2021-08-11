@@ -19,6 +19,7 @@ import pageObject.Login_PageObject;
 public class Login_stepDefinition extends OpenBrowser {
 	Login_PageObject Login;
 	String URL;
+	Scanner sc;
 	
 	@Given("User is on login page")
     public void user_is_on_login_page() throws Throwable {
@@ -55,7 +56,7 @@ public class Login_stepDefinition extends OpenBrowser {
 
     @When("User provide the OTP")
     public void user_provide_the_otp() throws Throwable {
-    	Scanner sc =new Scanner(System.in);
+    	sc =new Scanner(System.in);
     	System.out.println("Enter the OTP: ");
     	String OTP=sc.nextLine();
     	System.out.println(" The received otp is "+OTP);
@@ -86,7 +87,7 @@ public class Login_stepDefinition extends OpenBrowser {
 		Otpdigit6.clear();
 		Otpdigit6.sendKeys(otp6);
 		
-    	
+		Login.getverifyButton().click();
         
     }
 
@@ -113,7 +114,7 @@ public class Login_stepDefinition extends OpenBrowser {
 
     @Then("Verify the user successfully logged in and landed on dashboard")
     public void verify_the_user_successfully_logged_in_and_landed_on_dashboard() throws Throwable {
-    	Login.getverifyButton().click();
+    	
     	String dashboard="https://web-app-sit.briix.com/dashboard";
     	Thread.sleep(2000);
     	String dashboardURL=driver.getCurrentUrl();

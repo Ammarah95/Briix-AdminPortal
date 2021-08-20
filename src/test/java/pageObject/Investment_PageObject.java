@@ -16,7 +16,7 @@ public class Investment_PageObject {
 	return driver.findElement(investment);	
 	}
 	
-	By filter=By.xpath("//*[@id=\"layout-wrapper\"]//div[2]/button");
+	By filter=By.xpath("//i[@class='mdi mdi-filter']");
 	public WebElement getfilter() {
 	return driver.findElement(filter);	
 	}
@@ -41,12 +41,12 @@ public class Investment_PageObject {
 	return driver.findElement(acceptButton);	
 	}
 	
-	By accept=By.xpath("/html/body/div[3]/div/div[1]/div/div/div[2]/div/div/div/div[1]/button");
+	By accept=By.xpath("//div[contains(@class,'text-center')]//button[@type='submit'][.='Accept']");
 	public WebElement getaccept() {
 	return driver.findElement(accept);	
 	}
 	
-	By confirmationMessage=By.xpath("//h3[.='Are you sure you want to Accept?']");
+	By confirmationMessage=By.xpath("/html/body/div[3]/div/div[1]//h3");
 	public WebElement getconfirmationMessage() {
 	return driver.findElement(confirmationMessage);	
 	} 
@@ -56,7 +56,7 @@ public class Investment_PageObject {
 	return driver.findElement(searchText);	
 	}
 	
-	By statusProcessed=By.xpath("//span[.='Processed']");
+	By statusProcessed=By.xpath("//span[@class=' badge-soft-success Investment_increaseFont__SvxmA badge badge-secondary badge-pill']");
 	public WebElement getstatusProcessed() {
 	return driver.findElement(statusProcessed);	
 	}

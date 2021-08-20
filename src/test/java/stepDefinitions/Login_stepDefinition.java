@@ -20,9 +20,11 @@ public class Login_stepDefinition extends OpenBrowser {
 	Login_PageObject Login;
 	String URL;
 	Scanner sc;
-	
-	@Given("User is on login page")
-    public void user_is_on_login_page() throws Throwable {
+	public static String Browser;
+
+	@Given("User is on login page by using {string}")
+    public void user_is_on_login_page(String browserDriver) throws Throwable {
+		Browser=browserDriver;
 		driver=OpenBrowser.getDriver();
 		Login=new Login_PageObject(driver);
 		}
@@ -115,7 +117,7 @@ public class Login_stepDefinition extends OpenBrowser {
     @Then("Verify the user successfully logged in and landed on dashboard")
     public void verify_the_user_successfully_logged_in_and_landed_on_dashboard() throws Throwable {
     	
-    	String dashboard="https://web-app-sit.briix.com/dashboard";
+    	String dashboard="https://webapp-sit.briix.com/dashboard";
     	Thread.sleep(2000);
     	String dashboardURL=driver.getCurrentUrl();
     	if(dashboardURL.equalsIgnoreCase(dashboard)) {
